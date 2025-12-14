@@ -1,4 +1,3 @@
-import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
@@ -8,26 +7,15 @@ import Typography from "@mui/material/Typography";
 
 const App = () => {
   return (
-    <AppBar
-      position="static"
-      className="!bg-white !shadow-md"
-      elevation={0}
-    >
+    <AppBar position="static" className="bg-white shadow-md" elevation={0}>
       <Toolbar className="flex justify-between px-4">
         {/* Left section */}
         <div className="flex items-center gap-2">
-          <IconButton
-            edge="start"
-            className="md:hidden"
-            aria-label="menu"
-          >
+          <IconButton edge="start" className="md:hidden" aria-label="menu">
             {/* <MenuIcon className="text-gray-700" /> */}
           </IconButton>
 
-          <Typography
-            variant="h6"
-            className="!text-gray-800 font-semibold"
-          >
+          <Typography variant="h6" className="text-gray-800 font-semibold">
             MyApp
           </Typography>
         </div>
@@ -52,13 +40,13 @@ const App = () => {
         <div className="flex gap-3">
           <Button
             variant="outlined"
-            className="!border-blue-600 !text-blue-600"
+            className="border-blue-600 text-blue-600"
           >
             Login
           </Button>
           <Button
             variant="contained"
-            className="!bg-blue-600 hover:!bg-blue-700"
+            className="bg-blue-600 hover:bg-blue-700"
           >
             Sign Up
           </Button>
